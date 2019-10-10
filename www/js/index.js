@@ -8,9 +8,12 @@ document.addEventListener("deviceready", onDeviceReady, false);
 // method called updateDisplay
 // updates the html event divs to show how many times the application has been launched, paused and resumed	
 function updateDisplay() {
-	$("#launched").text("Application launched: " + launched_count);
+	/*$("#launched").text("Application launched: " + launched_count);
 	$("#resumed").text("Application paused: " + paused_count);
-	$("#paused").text("Application resumed: " + resumed_count);
+	$("#paused").text("Application resumed: " + resumed_count);*/
+	document.getElementById('launched').text("Application launched: " + launched_count);
+	document.getElementById('resumed').text("Application paused: " + paused_count);
+	document.getElementById('paused').text("Application resumed: " + resumed_count);
 }
 
 
